@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 Load and save images
 '''
 # load images
-img = cv2.imread("Lenna.png", cv2.IMREAD_COLOR)
+img = cv2.imread("images/Lenna.png", cv2.IMREAD_COLOR)
 # img = cv2.imread("Lenna.png", cv2.IMREAD_GRAYSCALE)
 # img = cv2.imread("Lenna.png", cv2.IMREAD_UNCHANGED)
 
@@ -53,7 +53,7 @@ img[450:500, 450:500] = 255
 '''
 Chaning color space
 '''
-frame = cv2.imread("blue.png", cv2.IMREAD_COLOR)
+frame = cv2.imread("images/blue.jpg", cv2.IMREAD_COLOR)
 
 # Convert BGR to HSV(Hue, Saturation, Value)
 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
